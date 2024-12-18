@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #faf7f0;
+    /* Off-white base for the page */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4a4947;
+    /* Dark background for the navbar */
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: #faf7f0;
+    /* Light color for the brand name */
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #b17457;
+    /* Highlight effect on hover */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    /* Align links to the right */
+}
+
+.nav-link {
+    color: #faf7f0;
+    /* Off-white for links */
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    /* Rounded corners for hover effect */
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #b17457;
+    /* Highlight background on hover */
+    color: #faf7f0;
+    /* Maintain text color */
+}
+
+.nav-link.active {
+    background-color: #d8d2c2;
+    /* Active link background */
+    color: #4a4947;
+    /* Dark text on active link */
+    font-weight: bold;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: 1px solid #faf7f0;
+    /* Light border for visibility */
+}
+
+.navbar-toggler-icon {
+    background-image: linear-gradient(#faf7f0,
+            #faf7f0);
+    /* White icon for toggler */
+}

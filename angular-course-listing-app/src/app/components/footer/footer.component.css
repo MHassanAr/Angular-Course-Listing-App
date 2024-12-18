@@ -1,0 +1,83 @@
+/* Ensure footer stays at the bottom of the page */
+:host {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #4a4947;
+    /* Dark footer background */
+    color: #faf7f0;
+    /* Light text for visibility */
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h5 {
+    color: #b17457;
+    /* Highlighted heading color */
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer p,
+.footer ul,
+.footer li,
+.footer a {
+    color: #faf7f0;
+    /* Default light text for readability */
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #d8d2c2;
+    /* Light hover effect for links */
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .about-section,
+.footer .quick-links,
+.footer .contact-info {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin: 0.5rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #faf7f0;
+    /* Subtle top border */
+    padding-top: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #d8d2c2;
+    /* Muted text for footer bottom */
+}
