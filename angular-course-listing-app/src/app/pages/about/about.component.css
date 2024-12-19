@@ -1,0 +1,278 @@
+/* Introduction Section */
+.intro-section {
+    background-color: #faf7f0;
+    /* Light background */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin: 0;
+    /* Removed margin-top */
+}
+
+.intro-section h1 {
+    color: #b17457;
+    /* Highlight heading */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.intro-section p {
+    color: #4a4947;
+    /* Darker text */
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Mission Section */
+.mission-section {
+    background-color: #faf7f0;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Removed margin-top */
+}
+
+.mission-section h2 {
+    color: #b17457;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.mission-section p {
+    color: #4a4947;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Vision Section */
+.vision-section {
+    background-color: #faf7f0;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Removed margin-top */
+}
+
+.vision-section h2 {
+    color: #b17457;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.vision-section p {
+    color: #4a4947;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Core Values Section */
+.values-section {
+    background-color: #faf7f0;
+    padding: 3rem 1rem;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Removed margin-top */
+}
+
+.values-section h2 {
+    color: #b17457;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.values-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.values-section li {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    color: #4a4947;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.values-section li strong {
+    color: #b17457;
+}
+
+/* Team Section */
+.team-section {
+    background-color: #faf7f0;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Removed margin-top */
+}
+
+.team-section h2 {
+    color: #b17457;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    color: #b17457;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: #4a4947;
+    font-size: 1rem;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background: linear-gradient(135deg, #b17457, #d8a86d);
+    /* Gradient background */
+    color: #faf7f0;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0;
+    /* Removed margin-top */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-section a {
+    background-color: #d8d2c2;
+    color: #4a4947;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section a:hover {
+    background-color: #d8a86d;
+}
+
+/* Achievements Section */
+.achievements-section {
+    background-color: #faf7f0;
+    /* Light background to highlight achievements */
+    padding: 3rem 0;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0;
+    /* Removed margin-top */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow to add depth */
+}
+
+.achievements-section h2 {
+    color: #b17457;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.achievements-section ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.achievements-section li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b17457;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievements-section li strong {
+    font-size: 2.5rem;
+    /* Make the number larger */
+    color: #4a4947;
+    /* Darker color for the number */
+    margin-bottom: 1rem;
+}
+
+.achievements-section li span {
+    font-size: 1.2rem;
+    color: #4a4947;
+    /* Gray color for the description */
+}
+
+.achievements-section li i {
+    font-size: 3rem;
+    color: #b17457;
+    margin-bottom: 1rem;
+}
+
+/* Adding a subtle hover effect to achievement items */
+.achievements-section li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
