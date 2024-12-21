@@ -1,1 +1,86 @@
-<p>admin works!</p>
+<div class="admin-container">
+  <h2>Admin Panel</h2>
+
+  <!-- Form for adding a course -->
+  <div class="add-course-card">
+    <h3>Add Course</h3>
+    <form (ngSubmit)="addCourse()">
+      <div class="form-group">
+        <label for="title">Course Title</label>
+        <input
+          type="text"
+          id="title"
+          [(ngModel)]="newCourse.title"
+          name="title"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Course Description</label>
+        <textarea
+          id="description"
+          [(ngModel)]="newCourse.description"
+          name="description"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select
+          id="category"
+          [(ngModel)]="newCourse.category"
+          name="category"
+          required
+        >
+          <option *ngFor="let category of categories" [value]="category">
+            {{ category }}
+          </option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="image">Course Image</label>
+        <input
+          type="file"
+          id="image"
+          (change)="handleImageUpload($event)"
+          accept="image/*"
+        />
+      </div>
+
+      <button type="submit">Add Course</button>
+      <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+    </form>
+  </div>
+
+  <!-- Remove Course -->
+  <div class="remove-course-card">
+    <h3>Remove Course</h3>
+    <div class="course-cards-container">
+      <div *ngFor="let course of courses; let i = index" class="course-card">
+        <img [src]="course.imageUrl" alt="Course Image" />
+        <h4>{{ course.title }}</h4>
+        <p>{{ course.description }}</p>
+        <button (click)="removeCourse(i)">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Display Student Details -->
+  <div class="student-details-card">
+    <h3>Enrolled Students</h3>
+    <div *ngFor="let course of courses">
+      <div class="student-details">
+        <h4>{{ course.title }} - Enrolled Students</h4>
+        <p>Total Students: {{ course.enrolledStudents.length }}</p>
+        <ul>
+          <li *ngFor="let student of course.enrolledStudents">
+            {{ student.name }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
