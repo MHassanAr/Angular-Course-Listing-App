@@ -1,1 +1,79 @@
-<p>courses works!</p>
+<div class="courses-page">
+  <h1>Courses</h1>
+
+  <!-- Search Bar and Filter -->
+  <div class="filter-bar">
+    <input
+      type="text"
+      placeholder="Search courses..."
+      [(ngModel)]="searchQuery"
+      (input)="filterCourses()"
+    />
+
+    <select [(ngModel)]="selectedCategory" (change)="filterCourses()">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">
+        {{ category }}
+      </option>
+    </select>
+
+    <button (click)="clearFilters()">Clear Filters</button>
+  </div>
+
+  <!-- Display Courses -->
+  <div class="courses-row">
+    <div *ngFor="let course of filteredCourses" class="course-card">
+      <img
+        *ngIf="course.imageUrl"
+        [src]="course.imageUrl"
+        alt="{{ course.title }}"
+        class="course-image"
+      />
+      <h3>{{ course.title }}</h3>
+      <p>{{ course.description }}</p>
+      <p><strong>Category:</strong> {{ course.category }}</p>
+      <p>
+        <strong>Enrolled:</strong> {{ course.enrolledStudents?.length || 0 }}
+      </p>
+      <button (click)="enroll(course)">Enroll</button>
+    </div>
+  </div>
+
+  <!-- Enrollment Modal -->
+  <div *ngIf="selectedCourse" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="clearEnrollmentForm()">&times;</span>
+      <h2>Enroll in {{ selectedCourse.title }}</h2>
+
+      <form (ngSubmit)="submitEnrollment()">
+        <input
+          type="text"
+          placeholder="Enter your name"
+          [(ngModel)]="studentName"
+          name="studentName"
+          required
+        />
+        <input
+          type="number"
+          placeholder="Enter your age"
+          [(ngModel)]="studentAge"
+          name="studentAge"
+          required
+        />
+        <input
+          type="tel"
+          placeholder="Enter your phone number"
+          [(ngModel)]="studentPhone"
+          name="studentPhone"
+          required
+        />
+        <button type="submit">Submit Enrollment</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- No Courses Found -->
+  <p *ngIf="filteredCourses.length === 0" class="no-courses-message">
+    No courses found.
+  </p>
+</div>
