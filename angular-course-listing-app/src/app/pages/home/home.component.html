@@ -1,1 +1,76 @@
-<p>home works!</p>
+<div class="home-container">
+  <!-- Banner Section -->
+  <section class="banner">
+    <img src="assets/main.jpg" alt="Learning Platform Banner" />
+    <div class="banner-content">
+      <h1>Welcome to Your Learning Journey</h1>
+      <p>Explore courses from top universities and industry experts.</p>
+      <button (click)="navigateToCourses()">Explore Courses</button>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section class="sponsors">
+    <h2>Our Sponsors & Partners</h2>
+    <div class="logos">
+      <img src="assets/s5.png" alt="Sponsor 1" />
+      <img src="assets/s1.png" alt="Sponsor 2" />
+      <img src="assets/s2.jpeg" alt="Sponsor 3" />
+      <img src="assets/s6.png" alt="Sponsor 4" />
+      <img src="assets/s3.jpeg" alt="Sponsor 5" />
+      <img src="assets/s4.png" alt="Sponsor 6" />
+    </div>
+  </section>
+
+  <!-- Motivation Section -->
+  <section class="motivation">
+    <h2>Empowering Learners Worldwide</h2>
+    <p>
+      "Learning is the one treasure that grows more valuable the more it is
+      shared, yet it can never be taken away from you. It is a journey of
+      discovery that empowers you to unlock doors to opportunities, bridge the
+      gap between dreams and reality, and transform challenges into stepping
+      stones. Each lesson, whether born from success or failure, adds to your
+      strength and shapes your perspective. Knowledge is the foundation upon
+      which innovation thrives, creativity flourishes, and humanity progresses.
+      It gives us the courage to question, the ability to solve, and the power
+      to inspire. In a world that is ever-changing, learning is your constant
+      companion, a gift that evolves with you, and a legacy that lives beyond
+      your lifetime."
+    </p>
+  </section>
+
+  <!-- Trending Courses Section -->
+  <section class="trending-courses">
+    <h2>Trending Courses</h2>
+    <div class="course-cards">
+      <div *ngFor="let course of trendingCourses" class="course-card">
+        <img [src]="course.imageUrl" [alt]="course.title" />
+        <h3>{{ course.title }}</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews">
+    <h2>What Our Users Say</h2>
+    <div class="review-cards">
+      <div *ngFor="let review of reviews" class="review-card">
+        <p>"{{ review.feedback }}"</p>
+        <h4>- {{ review.name }}</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Community Section -->
+  <section class="join-community">
+    <h2>Join Our Community</h2>
+    <p>
+      Join our community of passionate learners, where you can collaborate,
+      share ideas, and grow together. Whether you're just starting your journey
+      or looking to deepen your knowledge, our platform offers the resources and
+      support you need to succeed.
+    </p>
+    <button (click)="navigateToContact()">Contact Us</button>
+  </section>
+</div>
