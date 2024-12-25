@@ -1,42 +1,42 @@
 .home-container {
     font-family: Arial, sans-serif;
     background-color: #faf7f0;
-}
-
-/* Banner Section */
-.banner {
+  }
+  
+  /* Banner Section */
+  .banner {
     position: relative;
     text-align: center;
     color: white;
     height: 100vh;
     overflow: hidden;
-}
-
-.banner img {
+  }
+  
+  .banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.banner-content {
+  }
+  
+  .banner-content {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.banner-content h1 {
+  }
+  
+  .banner-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-}
-
-.banner-content p {
+  }
+  
+  .banner-content p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-}
-
-.banner-content button {
+  }
+  
+  .banner-content button {
     padding: 0.8rem 1.5rem;
     font-size: 1.2rem;
     background-color: #b17457;
@@ -44,26 +44,26 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.banner-content button:hover {
+  }
+  
+  .banner-content button:hover {
     background-color: #a1604f;
-}
-
-/* Sponsors Section */
-.sponsors {
+  }
+  
+  /* Sponsors Section */
+  .sponsors {
     text-align: center;
     margin: 2rem 0;
     margin-top: 4rem;
-}
-
-.sponsors .logos img {
+  }
+  
+  .sponsors .logos img {
     width: 150px;
     margin: 0 2rem;
-}
-
-/* Motivation Section */
-.motivation {
+  }
+  
+  /* Motivation Section */
+  .motivation {
     text-align: center;
     margin: 2rem 0;
     margin-top: 4rem;
@@ -73,22 +73,22 @@
     color: #000;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Trending Courses Section */
-.trending-courses {
+  }
+  
+  /* Trending Courses Section */
+  .trending-courses {
     text-align: center;
-}
-
-.trending-courses .course-cards {
+  }
+  
+  .trending-courses .course-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin: 2rem 0;
     justify-items: center;
-}
-
-course-card {
+  }
+  
+  .course-card {
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -100,64 +100,64 @@ course-card {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.course-card:hover {
+  }
+  
+  .course-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.course-card img {
+  }
+  
+  .course-card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
-}
-
-.course-card h3 {
+  }
+  
+  .course-card h3 {
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     color: #4a4947;
-}
-
-.course-card p {
+  }
+  
+  .course-card p {
     font-size: 0.9rem;
     color: #6c6c6c;
     line-height: 1.4;
-}
-
-/* Reviews Section */
-.reviews {
+  }
+  
+  /* Reviews Section */
+  .reviews {
     text-align: center;
-}
-
-.reviews .review-cards {
+  }
+  
+  .reviews .review-cards {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin: 2rem 0;
-}
-
-.review-card {
+  }
+  
+  .review-card {
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 1rem;
     width: 250px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Join Community Section */
-.join-community {
+  }
+  
+  /* Join Community Section */
+  .join-community {
     text-align: center;
     margin-top: 4rem;
     background: linear-gradient(90deg, #b17457, #f3d1bf);
     padding: 5rem;
-}
-
-.join-community button {
+  }
+  
+  .join-community button {
     padding: 0.8rem 1.5rem;
     font-size: 1.2rem;
     background-color: #b17457;
@@ -165,8 +165,9 @@ course-card {
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-.join-community button:hover {
+  }
+  
+  .join-community button:hover {
     background-color: #a1604f;
-}
+  }
+  
