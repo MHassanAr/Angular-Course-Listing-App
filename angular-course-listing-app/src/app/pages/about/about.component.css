@@ -147,9 +147,9 @@
 }
 
 .team-member img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  border-radius: 2%;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
   margin-bottom: 1rem;
 }
